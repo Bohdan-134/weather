@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -12,29 +13,48 @@ body {
     background: url(../img/evening.jpg) no-repeat;
     background-size: 150% 150% !important;
     font-family: 'Montserrat', sans-serif;
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .weather-container {
+    -webkit-box-shadow: 0px 0px 5px black;
     box-shadow: 0px 0px 5px black;
     border-radius: 10px;
     width: 90%;
     height: 80%;
     background: url(../img/evening.jpg) no-repeat;
     background-size: 100% 100% !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
     overflow: hidden;
     .content-block {
         width: 60%;
         padding: 5% 0% 7% 5%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         .content-block-search {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
             input {
                 border-bottom: 1px solid white;
@@ -49,17 +69,32 @@ body {
                 background-color: transparent;
                 font-size: 20px;
                 margin-left: 10px;
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
                 justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
                 align-items: center;
                 color: white;
             }
         }
         .content-block-info {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
             flex-direction: column;
             .content-block-info1 {
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
                 align-items: center;
                 #degree {
                     color: white;
@@ -97,11 +132,14 @@ body {
         right: 0%;
         width: 40%;
         z-index: 2;
+        -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
         background-color: #0000000d;
         border-radius: 0px 10px 10px 0px;
         padding: 5% 0% 5% 5%;
         overflow-y: scroll;
+        -webkit-transition: 1s;
+        -o-transition: 1s;
         transition: 1s;
         h3 {
             color: white;
@@ -117,7 +155,12 @@ body {
             }
         }
         .additional-info {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
             flex-direction: column;
             span {
                 color: #ffffffa6;
@@ -185,9 +228,13 @@ body {
     .weather-container {
         .content-block {
             padding: 0%;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
             width: 100%;
             .content-block-search {
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
                 justify-content: center;
                 margin-top: 15%;
                 input {
@@ -195,8 +242,13 @@ body {
                 }
             }
             .content-block-info {
+                -webkit-box-align: center;
+                -ms-flex-align: center;
                 align-items: center;
                 .content-block-info1 {
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: reverse;
+                    -ms-flex-direction: column-reverse;
                     flex-direction: column-reverse;
                     #degree {
                         font-size: 120px;
@@ -234,10 +286,14 @@ body {
                 &::before {
                     width: 80%;
                     left: 50%;
+                    -webkit-transform: translateX(-50%);
+                    -ms-transform: translateX(-50%);
                     transform: translateX(-50%);
                 }
             }
             .additional-info {
+                -webkit-box-align: center;
+                -ms-flex-align: center;
                 align-items: center;
                 span {
                     font-size: 25px;
