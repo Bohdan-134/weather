@@ -84,7 +84,7 @@ window.onload = function() {
 } */
 
 function weatherAPI() {
-    fetch("http://api.openweathermap.org/data/2.5/weather?q=" + searchInput.value + ",&APPID=f6c00d7bb9d6455fbbd72979940b788e")
+    fetch("https://api.openweathermap.org/data/2.5/weather?q=" + searchInput.value + ",&APPID=f6c00d7bb9d6455fbbd72979940b788e")
         .then(function(resp) { return resp.json() })
         .then(function(data) {
             degree.innerHTML = Math.round(data.main.temp - 273) + "&deg";
