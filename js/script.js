@@ -21,7 +21,7 @@ const month = ["Jan ", "Feb ", "Mar ", "Apr ", "May ", "June ", "July ", "Aug ",
 const days = ["Monday, ", "Tuesday, ", "Wednesday, ", "Thursday, ", "Friday, ", "Saturday, ", "Sunday, "];
 
 window.onload = function() {
-    /*   setInterval(background(), 60000); */
+    setInterval(background(), 60000);
     weatherAPI();
     if (date.getDay() == 1) {
         nameDay.innerHTML = days[0];
@@ -67,7 +67,7 @@ window.onload = function() {
     numYear.innerHTML = date.getFullYear();
 };
 
-/* function background() {
+function background() {
     if (date.getHours() < 6 && date.getHours() >= 0) {
         document.querySelector("body").style.background = "url(../img/night.jpg) no-repeat"
         document.querySelector(".weather-container").style.background = "url(../img/night.jpg) no-repeat"
@@ -81,7 +81,7 @@ window.onload = function() {
         document.querySelector("body").style.background = "url(../img/evening.jpg) no-repeat"
         document.querySelector(".weather-container").style.background = "url(../img/evening.jpg) no-repeat"
     }
-} */
+}
 
 function weatherAPI() {
     fetch("https://api.openweathermap.org/data/2.5/weather?q=" + searchInput.value + ",&APPID=f6c00d7bb9d6455fbbd72979940b788e")
