@@ -388,27 +388,27 @@ body {
     font-size: 50px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .weather-container {
-    width: 90%;
-    height: 90%;
+    width: 90% !important;
+    height: 90% !important;
   }
   .weather-container .content-block .content-block-search input {
     height: 30px;
-    font-size: 25px;
-    padding: 10px 6px;
+    font-size: 20px;
+    padding: 5px;
   }
   .weather-container .content-block .content-block-search button {
-    font-size: 25px;
+    font-size: 20px;
   }
   .weather-container .content-block .content-block-info .content-block-info1 #degree {
-    font-size: 100px;
+    font-size: 90px;
   }
   .weather-container .content-block .content-block-info #city {
-    font-size: 40px;
+    font-size: 30px;
   }
   .weather-container .content-block .content-block-info #info {
-    margin: 10% 0% 60%;
+    margin: 8% 0% 60%;
   }
   .weather-container .content-block .content-block-info .date {
     margin-bottom: 10%;
