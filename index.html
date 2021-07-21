@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- box-icons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- style -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Weather</title>
+</head>
+
+<body>
+    <div class="weather-container">
+        <div class="content-block">
+            <div class="content-block-search">
+                <input id="search-input" type="text" value="Kherson">
+                <button id="search-btn"><i class='bx bx-search'></i></button>
+            </div>
+            <div class="content-block-info">
+                <div class="content-block-info1">
+                    <span id="degree"></span>
+                    <div id="img-status"></div>
+                </div>
+                <span id="city"></span>
+                <div id="info">
+                    <i class='bx bx-info-circle'></i>
+                </div>
+                <div class="date">
+                    <span id="date-nameDay"></span>
+                    <span id="date-numDay"></span>
+                    <span id="date-nameMonth"></span>
+                    <span id="date-numYear"></span>
+                </div>
+            </div>
+        </div>
+        <div class="additional-information-block">
+            <h3>Additional information:</h3>
+            <div class="additional-info">
+                <span id="clouds"></span>
+                <span id="min-temp"></span>
+                <span id="max-temp"></span>
+                <span id="humidity"></span>
+                <span id="country"></span>
+                <div id="close">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
