@@ -317,8 +317,8 @@ body {
 
 @media (max-width: 500px) {
     .weather-container {
-        width: 90% !important;
-        height: 90% !important;
+        width: 90%;
+        height: 90vh;
         .content-block {
             .content-block-search {
                 input {
