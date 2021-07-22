@@ -416,8 +416,11 @@ body {
   .weather-container .content-block .content-block-info .date span {
     font-size: 15px;
   }
-  .weather-container .additional-information-block .additional-info span {
+  .weather-container .additional-information-block h3 {
     font-size: 25px;
-    margin-top: 25%;
+  }
+  .weather-container .additional-information-block .additional-info span {
+    font-size: 20px;
+    margin-top: 20%;
   }
 }
